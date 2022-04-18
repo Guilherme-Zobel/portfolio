@@ -1,0 +1,30 @@
+import styled from 'styled-components';
+
+export const Container = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  h1 {
+    color: ${({ theme }) => theme.primary};
+    font-size: 4.2rem;
+  }
+
+  h2 {
+    color: ${({ theme }) => theme.secondary};
+    font-weight: 300;
+    font-size: 3.2rem;
+  }
+
+  @media (max-width: 1000px) {
+    h1 {
+      font-size: 3.2rem;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+    }
+  }
+`;

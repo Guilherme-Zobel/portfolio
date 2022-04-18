@@ -26,9 +26,6 @@ function HomeHero() {
             <div>
               Função: <span className="blue">Dev Front-end, </span>
             </div>
-            <div>
-              Cidade: <span className="blue">Gravataí/RS</span>
-            </div>
             {'\u007D'}
           </CodeItem>
         </InfoContainer>

@@ -17,24 +17,27 @@ export const TextContainer = styled.section`
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 400;
     color: ${({ theme }) => theme.primary};
   }
   @media (max-width: 1450px) {
+    margin-top: 0.5rem;
     h1 {
-      font-size: 5rem;
+      font-size: 6rem;
     }
     h2 {
-      font-size: 2rem;
+      font-size: 3rem;
     }
   }
   @media (max-width: 1000px) {
+    margin-top: 0.25rem;
+    margin-left: 1rem;
     h1 {
-      font-size: 3rem;
+      font-size: 4rem;
     }
     h2 {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
 `;
@@ -52,26 +55,39 @@ export const CodeItem = styled.pre`
   font-family: 'JetBrains Mono', monospace;
   font-weight: 300;
   color: #fff;
-  width: 24rem;
+  width: 25rem;
   align-self: flex-start;
   transform: 1s;
+  font-size: 1.2rem;
 
-  @media (max-width: 1450px) {
-    width: 18rem;
-    padding: 1.5rem;
-    font-size: 0.8rem;
-  }
-
-  @media (max-width: 1000px) {
-    width: 100%;
-  }
-
-  &:hover {
-    filter: brightness(1.2);
+  &:first-child {
+    margin-left: 5rem;
   }
 
   &:last-child {
     align-self: flex-end;
+  }
+
+  @media (max-width: 1450px) {
+    width: 18rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+
+    &:first-child {
+      margin-left: 1rem;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    width: 18rem;
+    margin: 0;
+  }
+  &:last-child {
+    margin-right: 1rem;
+  }
+
+  &:hover {
+    filter: brightness(1.2);
   }
 
   > div {
